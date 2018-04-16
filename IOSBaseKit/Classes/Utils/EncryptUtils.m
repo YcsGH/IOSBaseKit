@@ -12,6 +12,26 @@
 
 @implementation EncryptUtils
 
+NSString* data2hexString(NSData *data)
+{
+    NSUInteger bytesCount = data.length;
+    if (bytesCount) {
+        const char *hexChars = "0123456789ABCDEF";
+        const unsigned char *dataBuffer = data.bytes;
+        char *chars = malloc(sizeof(char) * (bytesCount * 2 + 1));
+        char *s = chars;
+        for (unsigned i = 0; i < bytesCount; ++i) {
+            *s++ = hexChars[((*dataBuffer & 0xF0) >> 4)];
+            *s++ = hexChars[(*dataBuffer & 0x0F)];
+            dataBuffer++;
+        }
+        *s = '\0';
+        NSString *hexString = [NSString stringWithUTF8String:chars];
+        free(chars);
+        return hexString;
+    }
+    return @"";
+}
 
 +(NSString *)md5:(NSString *)str {
     if (str == nil || [str isEqualToString:@""]) { return @"";}
@@ -88,6 +108,43 @@ NSData * aesDecryptData(NSData *contentData, NSData *keyData) {
     NSString *hint = [NSString stringWithFormat:@"The key size of AES-%lu should be %lu bytes!", kKeySize * 8, kKeySize];
     NSCAssert(keyData.length == kKeySize, hint);
     return cipherOperation(contentData, keyData, kCCDecrypt);
+}
+
+NSString* HloveyRC4(NSString *aInput,NSString *aKey) {
+    const void *vplainText;
+    size_t plainTextBufferSize;
+    plainTextBufferSize = [aInput length];
+    NSData *data = [aInput dataUsingEncoding:NSUTF8StringEncoding];
+    vplainText = [data bytes];
+    
+    CCCryptorStatus ccStatus;
+    uint8_t *bufferPtr = NULL;
+    size_t bufferPtrSize = 0;
+    size_t movedBytes = 0;
+    
+    bufferPtrSize = (plainTextBufferSize + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
+    bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
+    memset((void *)bufferPtr, 0x0, bufferPtrSize);
+    
+    NSString *key = aKey;
+    const void *vkey = (const void *) [key UTF8String];
+    
+    size_t keyLength = [[key dataUsingEncoding:NSUTF8StringEncoding] length];
+    ccStatus = CCCrypt(kCCEncrypt,
+                       kCCAlgorithmRC4,
+                       0,
+                       vkey,
+                       keyLength,
+                       nil,
+                       vplainText,
+                       plainTextBufferSize,
+                       (void *)bufferPtr,
+                       bufferPtrSize,
+                       &movedBytes);
+    NSData *rettdata = [NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes];
+    NSString *reet = [data2hexString(rettdata) lowercaseString];
+    return reet;
+    
 }
 
 

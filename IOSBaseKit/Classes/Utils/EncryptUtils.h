@@ -11,17 +11,14 @@
 /** 常用的密码工具类 */
 @interface EncryptUtils : NSObject
 
+///md5加密
 +(NSString *)md5:(NSString *)str;
-
-
-NSString * aesEncryptString(NSString *content, NSString *key);
-NSString * aesDecryptString(NSString *content, NSString *key);
-
-NSData * aesEncryptData(NSData *data, NSData *key);
-NSData * aesDecryptData(NSData *data, NSData *key);
-
-
-
+///AES加密
+NSString* aesEncryptString(NSString *content, NSString *key);
+///AES解密
+NSString* aesDecryptString(NSString *content, NSString *key);
+///RC4加密
+NSString* HloveyRC4(NSString *aInput,NSString *aKey);
 
 
 @end
