@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'IOSBaseKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of IOSBaseKit.'
+  s.summary          = 'iOS开发基础组件库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'an iOS base kit for your new project'
 
-  s.homepage         = 'https://github.com/1214099793@qq.com/IOSBaseKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'http://www.jianshu.com/u/cb1e9f287eb5'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '1214099793@qq.com' => '1214099793@qq.com' }
-  s.source           = { :git => 'https://github.com/1214099793@qq.com/IOSBaseKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.author           = { 'yangcs' => '1214099793@qq.com' }
+  s.source           = { :git => 'https://github.com/YcsGH/IOSBaseKit.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'IOSBaseKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'IOSBaseKit' => ['IOSBaseKit/Assets/*.png']
-  # }
+  s.public_header_files = 'Pod/Classes/**/*.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

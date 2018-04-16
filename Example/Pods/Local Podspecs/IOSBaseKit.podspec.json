@@ -1,0 +1,23 @@
+{
+  "name": "IOSBaseKit",
+  "version": "0.1.0",
+  "summary": "iOS开发基础组件库",
+  "description": "an iOS base kit for your new project",
+  "homepage": "http://www.jianshu.com/u/cb1e9f287eb5",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yangcs": "1214099793@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/YcsGH/IOSBaseKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IOSBaseKit/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h"
+}
