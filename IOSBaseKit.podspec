@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = 'an iOS base kit for your new project'
 
-  s.homepage         = 'https://github.com/YcsGH/IOSBaseKit.git'
+  s.homepage         = 'http://www.jianshu.com/u/cb1e9f287eb5'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yangcs' => '1214099793@qq.com' }
   s.source           = { :git => 'https://github.com/YcsGH/IOSBaseKit.git', :tag => s.version.to_s }
