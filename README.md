@@ -22,7 +22,7 @@ pod 'IOSBaseKit'
 
 ## Author
 
-1214099793@qq.com, 1214099793@qq.com
+yangcs, 1214099793@qq.com
 
 ## License
 

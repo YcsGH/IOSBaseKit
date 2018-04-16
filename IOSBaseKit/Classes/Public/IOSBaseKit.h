@@ -2,7 +2,7 @@
 //  IOSBaseKit.h
 //  Pods
 //
-//  Created by Metalfish on 2018/4/16.
+//  Created by yangcs on 2018/4/16.
 //
 //
 
@@ -14,12 +14,18 @@
 // 算法是解决问题的各种策略，可借助于数学等各学科知识；
 // 代码要求:函数粒度不超过20行，高内聚，低耦合。
 
+
 #ifndef IOSBaseKit_h
 #define IOSBaseKit_h
 
-
 #import "NSArray+safety.h"
-
-
+#import "UIViewFactory.h"
+#import "MathUtils.h"
+#import "StringUtils.h"
+#import "RegexUtils.h"
+#import "EncryptUtils.h"
+#import "SharedPreference.h"
+#import "FileAssistant.h"
 
 #endif /* IOSBaseKit_h */
+

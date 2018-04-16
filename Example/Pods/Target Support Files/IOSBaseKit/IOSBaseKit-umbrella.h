@@ -11,8 +11,12 @@
 #endif
 
 #import "NSArray+safety.h"
+#import "FileAssistant.h"
 #import "SharedPreference.h"
 #import "IOSBaseKit.h"
+#import "EncryptUtils.h"
+#import "MathUtils.h"
+#import "RegexUtils.h"
 #import "StringUtils.h"
 #import "UIViewFactory.h"
 

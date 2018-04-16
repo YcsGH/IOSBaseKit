@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IOSBaseKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'iOS开发基础组件库'
 
 # This description is used to generate tags and improve search results.
@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/YcsGH/IOSBaseKit.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'IOSBaseKit/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'IOSBaseKit/Classes/**/*.h'
 
 end
