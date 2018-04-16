@@ -1,6 +1,6 @@
 {
   "name": "IOSBaseKit",
-  "version": "0.1.3",
+  "version": "0.2.1",
   "summary": "iOS开发基础组件库",
   "description": "an iOS base kit for your new project",
   "homepage": "http://www.jianshu.com/u/cb1e9f287eb5",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/YcsGH/IOSBaseKit.git",
-    "tag": "0.1.3"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "8.0"

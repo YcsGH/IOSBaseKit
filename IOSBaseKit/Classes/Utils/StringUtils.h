@@ -18,5 +18,7 @@
 +(NSString *)uuidStr;
 +(NSString *)buildNotEmptyStr:(NSString *)str;
 +(NSString *)convertToUTF8String:(char *)sourceStr;
+///获取汉字拼音
++(NSString *)transform:(NSString *)chinese;
 
 @end

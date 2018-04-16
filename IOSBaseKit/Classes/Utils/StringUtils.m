@@ -56,5 +56,53 @@
     return ret;
 }
 
+//获取汉字拼音
++(NSString *)transform:(NSString *)chinese{
+    NSMutableString *pinyin = [chinese mutableCopy]; //将汉字转换为拼音(带音标)
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformMandarinLatin, NO); //去掉音标
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformStripCombiningMarks, NO);
+    return pinyin;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
