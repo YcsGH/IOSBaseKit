@@ -395,7 +395,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		25070AB275D26480AA8C46009CC2EEB0 /* Debug */ = {
+		33AF69A8235D73AE1E95795CE9B67911 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CB47DE8FC02B79D34E90E86900DF328 /* IOSBaseKit.xcconfig */;
 			buildSettings = {
@@ -411,7 +411,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/IOSBaseKit/IOSBaseKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/IOSBaseKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/IOSBaseKit/IOSBaseKit.modulemap";
 				PRODUCT_NAME = IOSBaseKit;
@@ -572,7 +572,7 @@
 			};
 			name = Release;
 		};
-		E21EFEEB8981D08098B38AA3545C15B7 /* Release */ = {
+		A57307C6DE2B40C2292F63D1D125BC47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CB47DE8FC02B79D34E90E86900DF328 /* IOSBaseKit.xcconfig */;
 			buildSettings = {
@@ -588,7 +588,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/IOSBaseKit/IOSBaseKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/IOSBaseKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/IOSBaseKit/IOSBaseKit.modulemap";
 				PRODUCT_NAME = IOSBaseKit;
@@ -649,8 +649,8 @@
 		50DF99CF75ACAA957516EB9E6733B4B8 /* Build configuration list for PBXNativeTarget "IOSBaseKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25070AB275D26480AA8C46009CC2EEB0 /* Debug */,
-				E21EFEEB8981D08098B38AA3545C15B7 /* Release */,
+				33AF69A8235D73AE1E95795CE9B67911 /* Debug */,
+				A57307C6DE2B40C2292F63D1D125BC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

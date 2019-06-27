@@ -1,5 +1,5 @@
 PODS:
-  - IOSBaseKit (1.0.0)
+  - IOSBaseKit (1.0.2)
 
 DEPENDENCIES:
   - IOSBaseKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  IOSBaseKit: aa77174b2493693540664e1837b1d3d3e6d1adf7
+  IOSBaseKit: f002e7fe1be0807b0120ead28357a0802c8e6929
 
 PODFILE CHECKSUM: b419bd09d468afe482bbba7886bca1a3493abb82
 
