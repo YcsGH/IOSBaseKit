@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** 定义异常消息模型类 */
 @interface BaseException : NSObject
 
 @property(nonatomic,assign)NSInteger errorcode;  // 错误码
@@ -16,5 +17,8 @@
 
 +(BaseException *)initWithErrorCode:(NSInteger)errorcode
                         withMessage:(NSString *)message;
+
+/** 错误信息打印 */
+-(void)printStackTrace;
 
 @end

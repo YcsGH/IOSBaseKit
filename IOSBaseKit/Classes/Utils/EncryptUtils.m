@@ -84,14 +84,14 @@ NSData * cipherOperation(NSData *contentData, NSData *keyData, CCOperation opera
     return nil;
 }
 
-NSString * aesEncryptString(NSString *content, NSString *key) {
+NSString * AES_EncryptString(NSString *content, NSString *key) {
     NSData *contentData = [content dataUsingEncoding:NSUTF8StringEncoding];
     NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
     NSData *encrptedData = aesEncryptData(contentData, keyData);
     return [encrptedData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
 }
 
-NSString * aesDecryptString(NSString *content, NSString *key) {
+NSString * AES_DecryptString(NSString *content, NSString *key) {
     NSData *contentData = [[NSData alloc] initWithBase64EncodedString:content options:NSDataBase64DecodingIgnoreUnknownCharacters];
     NSData *keyData = [key dataUsingEncoding:NSUTF8StringEncoding];
     NSData *decryptedData = aesDecryptData(contentData, keyData);

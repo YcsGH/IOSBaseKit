@@ -18,4 +18,8 @@
     return ex;
 }
 
+-(void)printStackTrace {
+    NSLog(@"IOSBaseKit/ERROR:%ld,%@",(long)_errorcode,_message);
+}
+
 @end

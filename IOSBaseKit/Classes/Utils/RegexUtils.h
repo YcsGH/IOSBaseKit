@@ -21,7 +21,7 @@ NSString *CaptureUrlInText(NSString *text);
 +(BOOL)checkEmailAddress:(NSString *)email;
 
 ///身份证验证
-+ (BOOL) validateIdentityCard: (NSString *)identityCard;
++(BOOL)validateIdentityCard: (NSString *)identityCard;
 
 
 @end

@@ -16,5 +16,7 @@
 +(id)getObjectForKey:(NSString *)key;
 ///从UserDefauts中获取一个字符串
 +(NSString*)stringForKey:(NSString *)key;
+///删除某个键值对
++(void)removeObjectForKey:(NSString *)key;
 
 @end

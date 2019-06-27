@@ -14,6 +14,7 @@
 #import "FileAssistant.h"
 #import "SharedPreference.h"
 #import "IOSBaseKit.h"
+#import "BaseException.h"
 #import "EncryptUtils.h"
 #import "MathUtils.h"
 #import "RegexUtils.h"

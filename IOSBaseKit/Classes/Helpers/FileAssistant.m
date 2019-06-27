@@ -46,7 +46,7 @@
     NSError *error = nil;
     [[self defaultManager]removeItemAtPath:filePath error:&error];
     if (error != nil) {
-        NSLog(@"remove file error:%@",error.localizedDescription);
+        NSLog(@"IOSBaseKit: remove file error:%@",error.localizedDescription);
     }
 }
 

@@ -14,9 +14,9 @@
 ///md5加密
 +(NSString *)md5:(NSString *)str;
 ///AES加密
-NSString* aesEncryptString(NSString *content, NSString *key);
+NSString* AES_EncryptString(NSString *content, NSString *key);
 ///AES解密
-NSString* aesDecryptString(NSString *content, NSString *key);
+NSString* AES_DecryptString(NSString *content, NSString *key);
 ///RC4加密
 NSString* HloveyRC4(NSString *aInput,NSString *aKey);
 

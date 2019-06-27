@@ -63,8 +63,12 @@
     CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformStripCombiningMarks, NO);
     return pinyin;
 }
-    
 
+
++(const char *)convertToCString:(NSString *)text {
+    const char *c_name = [text cStringUsingEncoding:CFStringConvertEncodingToNSStringEncoding (kCFStringEncodingGB_18030_2000)];
+    return c_name;
+}
 
 
 

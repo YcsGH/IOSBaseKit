@@ -7,6 +7,7 @@
 //
 
 #import "SharedPreference.h"
+#import "StringUtils.h"
 
 @implementation SharedPreference
 
@@ -44,6 +45,13 @@
         return (NSString *)value;
     }
     return @"";
+}
+
++(void)removeObjectForKey:(NSString *)key {
+    if ([StringUtils isEmpty:key]) {
+        return;
+    }
+    [[NSUserDefaults standardUserDefaults]removeObjectForKey:key];
 }
 
 

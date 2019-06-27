@@ -11,10 +11,7 @@
 @implementation NSArray (safety)
 
 -(BOOL)checkSafetyAt:(NSInteger)index {
-    if (self.count > index && index >= 0) {
-        return YES;
-    }
-    return NO;
+    return self.count > index && index >= 0;
 }
 
 
